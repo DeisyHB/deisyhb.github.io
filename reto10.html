@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 10</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #10</i>  </h1>
+     <p> Desarrollar un algoritmo que reciba un número entero y lo convierta a binario y hexadecimal.<br>
+        </p>
+
+
+    <h2><i> Solución</i> <br> </h2>
+    <p> <br>
+            
+         <code>
+        #1 función para convertir número entero a binario<br> 
+        numero_entero=int(input("Ingrese el número que desea convertir a número binario: "))<br> <br> 
+        
+        def entero_binario(numero_entero):<br> 
+            numero_binario = 0<br> 
+            multiplicador = 1<br> <br> 
+        
+            while numero_entero != 0:<br> <br> 
+        
+                numero_binario = numero_binario + numero_entero % 2 * multiplicador<br> 
+                numero_entero //= 2<br> 
+                multiplicador *= 10<br> <br> 
+        
+            return numero_binario<br> <br> 
+        
+        #Se imprime el número binario<br> <br> 
+        
+        print(entero_binario(numero_entero))<br> <br> 
+
+        #2 Algortimo que convierte números enteros en hexadecimales.<br><br>
+        
+        def entero_hexadecimal():<br>
+            entero = int(input('Introduce el número que deseas convertir en hexadecimal:\n'))<br>
+	    convertido = hex(entero)[2:]<br>
+        print(convertido)<br><br>
+        
+        entero_hexadecimal()</code>
+        
+        
+    </p>
+    
+   
+
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="index.html">Página de inicio</a>
+    
+</body>
+</html>

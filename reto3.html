@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #3 Cifrado César</i> </h1><br>
+
+    <h2>Parte 1:<br> </h2>
+
+       <p> Desarrollar un algoritmo que reciba una letra del Abecedario , la cual será la base para codificar y decodificar mensajes.<br>
+        Esta letra se convertirá en la primera de la secuencia y determinará el cambio de cada letra siguiente, por ejemplo:<br><br>
+        
+        Ingresa la B, todo el abecedario cambia de la siguiente forma:<br>
+        
+        A = B<br>
+        B = C <br>
+        C = D<br>
+        ……..<br>
+        Z = A<br>
+        
+          
+        </p>
+    
+
+    <h2>Parte 2:<br></h2>
+
+        <p>El algoritmo debe recibir una palabra cifrada, y la base original y deberá decodificarla, mostrando la palabra real. <br>
+
+        </p>
+    
+    
+    <h2><i> Solución</i> <br><br></h2>
+
+    <p> #Reto Cifrado César<br>
+        # 26 = Letras del alfabeto<br>
+       <code> alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'<br><br>
+        
+        
+        def encript(message, letter_base):<br>
+            letter_base = letter_base.upper()<br>
+            desplazamiento = alfabeto.index(letter_base)<br><br>
+        
+            # Concat<br>
+            cifrado = ''<br><br>
+        
+            for letra in message:<br>
+                if letra.upper() in alfabeto:<br>
+                    nueva_letra = alfabeto[(alfabeto.index(letra.upper()) + desplazamiento) % 26]<br><br>
+        
+                    if letra.islower():<br>
+                        nueva_letra = nueva_letra.lower()<br><br>
+        
+                    cifrado += nueva_letra<br>
+                else:<br>
+                    cifrado += letra<br>
+            return cifrado<br>
+        
+        
+        def decrypt(message, letra_base):<br>
+            letra_base = letra_base.upper()<br>
+            desplazamiento = alfabeto.index(letra_base)<br><br>
+        
+            # Concat<br>
+            descifrado = ''<br>
+        
+            for letra in message:<br>
+                if letra.upper() in alfabeto:<br>
+                    nueva_letra = alfabeto[(alfabeto.index(letra.upper()) - desplazamiento) % 26]<br><br>
+        
+                    if letra.islower():<br>
+                        nueva_letra = nueva_letra.lower()<br><br>
+        
+                    descifrado += nueva_letra<br>
+                else:<br>
+                    descifrado += letra<br>
+            return descifrado<br><br>
+        
+        
+        mensaje = 'Hi, It\'s me. :)'<br>
+        letter_base = 'S'<br>
+        
+        mensaje_cifrado = encript(mensaje, letter_base)<br>
+        mensaje_descifrado = decrypt(mensaje_cifrado, letter_base)<br><br>
+        
+        print('Mensaje original: ' + mensaje)<br>
+        print('Mensaje cifrado: ' + mensaje_cifrado)<br>
+        print('Mensaje descifrado: ' + mensaje_descifrado)<br></code>
+        
+    </p>
+    
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="file:///C:/Users/usuario/Desktop/DOCUMENTOS/DEISYHB/PLATZI%20DEVELOVERS/miprimeraapp/index.html">Página de inicio</a>
+    
+</body>
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 8</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #8</i>  </h1>
+        <p><p> Desarrollar y poner en funcionamiento un algoritmo que permita realizar el control de una cuenta bancaria. Las siguientes son las condiciones:<br>
+            <ol>
+                 <li>Debe entrar con una contraseña de 4 dígitos .</li>
+                 <li>Una vez ingrese debe mostrar cuál es el saldo de la cuenta (La primera vez siempre será 0) .</li>
+                 <li>Deberá escoger si quiere hacer un retiro o un depósito </li>
+                 <li>Para hacer retiro siempre debe validar si tiene plata suficiente</li>
+                 <li>Al final de la transacción deberá preguntar si quiere hacer un nuevo depósito o retiro o salir</li>
+                 <li>Si sale el programa terminará, con una despedida</li>
+                </ol>
+        </p>            
+
+
+    <h2><i> Solución</i> <br><br></h2>
+    <p>  
+
+    <code> 
+        print("Bienvenid@ Espero se encuentre muy bien el día de hoy"<br>
+        clave=0<br>
+        saldo=0<br>
+        clave=int(input("Para comenzar, ingrese su clave de 4 dígitos:    "))<br><br>
+
+#Validar clave de usuario<br>
+
+while clave==1609:<br>
+    print("¿Qué desea realizar?\n\<br>
+    1. Depósito \n\<br>
+    2. Retiro \n\<br>
+    3. Saldo\n\<br>
+    4. Salir")<br><br>
+    
+    opcion= int(input())<br><br>
+  
+    if opcion ==1:<br>
+      print("¿Cuánto desea depositar?: ")<br>
+      deposito=float(input())<br>
+      saldo += deposito <br>
+      print("Su saldo actualizado es de: ", saldo)<br><br>
+
+      if saldo < retiro:<br>
+        print("Fondos insuficientes")<br><br>
+
+    elif opcion== 2:<br>
+      print("¿Cuánto desea retirar?: ")<br>
+      retiro=float(input())<br>
+      saldo = saldo -retiro<br>
+      print("Su saldo actualizado es de: ", saldo)<br><br>
+
+    
+    elif opcion ==3:<br>
+      print("Su saldo es de: ", saldo)<br>
+
+    elif opcion ==4:<br>
+      print("Es un placer servirle. ¡Hasta pronto!")<br><br>
+
+      break<br><br>
+
+while  clave != 1609:<br>
+  print("Su clave es incorrecta, vuelve a ingresarla.")<br>
+  clave=int(input("Para comenzar, ingrese su clave de 4 dígitos:    "))<br>
+  
+  while clave==1609:<br>
+    print("¿Qué desea realizar?\n\<br>
+    1. Depósito \n\<br>
+    2. Retiro \n\<br>
+    3. Saldo\n\<br>
+    4. Salir")<br><br>
+    
+    opcion= int(input())<br><br>
+  
+    if opcion ==1:<br>
+      print("¿Cuánto desea depositar?: ")<br>
+      deposito=float(input())<br>
+      saldo += deposito <br>
+      print("Su saldo actualizado es de: ", saldo)<br><br>
+
+    elif opcion== 2:<br>
+      print("¿Cuánto desea retirar?: ")<br>
+      retiro=float(input())<br>
+      saldo = saldo -retiro<br>
+      print("Su saldo actualizado es de: ", saldo)<br><br><br>
+
+    
+    
+    elif opcion ==3:<br>
+      print("Su saldo es de: ", saldo)<br>
+      
+    elif opcion ==4:<br>
+      print("Es un placer servirle. ¡Hasta pronto!")<br><br>
+
+      break<br>
+<br>
+</code>
+        
+    </p>
+    
+    
+
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="index.html">Página de inicio</a>

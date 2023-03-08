@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 9</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #9 </i> </h1><br>
+
+    
+       <p> Desarrollar un algoritmo y ponerlo en funcionamiento que  simule el juego de adivinar el número. <br>
+        El algoritmo debe generar un número aleatorio entre 0 y 1000 y deberás ingresar números hasta que des con el número secreto
+        <br>
+       </p>
+    
+   
+    
+    <h2><i> Solución</i> <br><br></h2>
+
+    <p> <code>
+        import random <br>
+        num_intentos=0<br>
+        num_min=0<br>
+        num_max=1000<br>
+        
+        num_oculto=random.randint(num_min, num_max)<br><br>
+        
+        print("¡Hola, vamos a jugar! ¿Puedes adivinar un número del 0 al 1000?")<br><br>
+        
+        while num_intentos <1000:<br>
+          print("Ingresa tu número:   ")<br>
+          intento= input()<br>
+          intento=int(intento)<br>
+        
+          if num_oculto < intento:<br>
+            print("No es el número misterioso. ¡Sigue intentando! \n\<br>
+            El número misterioso es menor que el número que ingresaste")<br><br>
+          
+          if num_oculto > intento:<br>
+             print("No es el número misterioso. ¡Sigue intentando! \n\<br>
+            El número misterioso es mayor que el número que ingresaste")<br><br>
+          
+          if num_oculto == intento:<br>
+             print("¡Ganaste! Este es el número correcto.")<br><br>
+        
+             break <br>
+            </code>
+    </p>
+    
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="index.html">Página de inicio</a>
+    
+</body>
+    
+</body>
+</html>

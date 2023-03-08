@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 4</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #4</i>  </h1>
+
+        <p>Desarrollar un algoritmo que simule la descomposición numérica. Recibirá un número de 1 a n y deberá mostrar los factores y los cocientes. <br>
+        </p>
+
+
+    <h2><i> Solución</i> <br><br></h2>
+    <p><code> def descomposicion(num):<br>
+        divisores = []<br>
+        cocientes = [num]<br><br>
+        
+        num_divisor = 2<br>
+    
+        while num_divisor <= num:<br>
+            if num % num_divisor == 0:<br>
+                divisores.append(num_divisor)<br>
+                cocientes.append(num // num_divisor)<br>
+                num = num // num_divisor<br>
+            else:<br>
+                num_divisor += 1<br><br>
+                
+        print("60")<br>
+        print('Los factores son ', divisores);<br>
+        print('Los cocientes son ', cocientes);<br><br>
+    
+    descomposicion(60);<br></code>
+        
+    </p>
+    
+    
+
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="file:///C:/Users/usuario/Desktop/DOCUMENTOS/DEISYHB/PLATZI%20DEVELOVERS/miprimeraapp/index.html">Página de inicio</a>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 7</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #7 </i> </h1><br>
+
+    
+       <p> Desarrollar y poner en funcionamiento un algoritmo que genere 100 números aleatorios del 0 al 99, y concatenarlo en un solo. <br>
+        Una vez generado el aleatorio gigante, solicitar ingresar un número cualquiera entre 0 y 99, e indicar si existe o no en él.<br>
+       </p>
+    
+   
+    
+    <h2><i> Solución</i> <br><br></h2>
+
+    <p> <code> import random<br>
+        #variabe numero <br>
+        numero=""<br><br>
+        #variable que almacena los números como cadenas de texto<br>
+        cadena=str(random.randint(0,99))<br><br>
+        
+           
+        for x in range(100):<br>
+           cadena += str(x) <br><br>
+        
+        print(cadena)<br>
+        
+        
+        
+        input("El numero a buscar es: ", )<br><br>
+        
+        if numero in cadena: <br>
+          print("Ok")<br><br>
+        
+        else: <br>
+          print("El número no está")<br><br>
+          
+    </p>
+    
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="index.html">Página de inicio</a>
+    
+</body>
+    
+</body>
+</html>

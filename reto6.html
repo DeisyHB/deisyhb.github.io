@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 6</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #6</i>  </h1>
+
+        <p>Desarrollar un algoritmo que reciba un número entre 0 y 100 y lo convierta a su respectivo número Romano. <br>
+        </p>
+
+
+    <h2><i> Solución</i> <br><br></h2>
+    <p><code> <br>
+    <br>
+
+    #Crear unAlgoritmo que convierte cualquier número entero entre 1 a 100 a número romano<br>
+    import math<br><br>
+    #Crear listas con los número romanos del 1 al 9, 10 al 90 y del 100<br>
+    unidades=["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]<br>
+    decenas=["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]<br>
+    cien=["C" ]<br>
+    N=int(input("Ingresa numero entero\n"))<br>
+    u= N % 10<br>
+    d=int(math.floor(N/10))%10<br>
+    c=int(math.floor(N/100))<br>
+    if(N==100): <br>
+    print(cien[c]+decenas[d]+unidades[u])<br>
+    else:<br>
+    if(N>=10):<br>
+    print(decenas[d]+unidades[u])<br>
+    else:<br>
+    print(unidades[N]<br>
+    
+
+
+</code>
+    </p>
+    
+    
+
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="index.html">Página de inicio</a>
+    
+</body>
+</html>

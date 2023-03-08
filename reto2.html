@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2</title>
+    <style>
+        *{
+            color:blueviolet;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <i> Reto #2</i>  </h1>
+        <p>Escribir un algoritmo que reciba una x cantidad de números y los devuelva organizados ascendente y descendentemente. En caso de existir números repetidos sólo deberá mostrar uno.<br> 
+
+            Ejemplo: 1 9 5 7 9 3 1<br> 
+            
+            Salida:<br> <br> 
+            
+            1 3 5 7 9<br> 
+            
+            9 7 5 3 1<br> 
+            
+        </p>
+    
+
+    <h2><i> Solución</i> <br><br></h2>
+    <p> #Se crea una variable para ingresar los números de la lista. <br><br>
+
+    <code>cantidad_num=int(input("¿Cuántos números vas a ingresar?"))<br>
+my_list=[]<br>
+for i in range(cantidad_num):<br>
+  numeros=int(input(f"Ingresa el número {i+1}:"))<br>
+  my_list.append(numeros)<br><br>
+
+#los números que digitaste fueron<br>
+print("Te mostraré los números que ingresaste: ")<br>
+for numeros in my_list:<br>
+    print(numeros)<br><br>
+
+# esto imprime la lista NO ordenada<br>
+print("Lista desordenada: ", my_list)<br><br>
+
+#Eliminemos valores duplicados. Una forma es pasarlo a conjunto, ya que los conjuntos no tienen elementos repetidos<br>
+num_unicos=list(set(my_list))<br>
+
+# Ordenar la lista<br>
+num_unicos.sort()<br><br>
+
+# lista orden ascendente<br>
+print("Lista orden ascendente: ", num_unicos)<br><br>
+
+# lista orden descendente<br>
+orden_desc = sorted(num_unicos, reverse=True)<br>
+print("orden descendente", orden_desc)<br></code>
+        
+    </p>
+    
+    
+
+    <h3> Volver a la página de inicio</h3>
+
+    <a href="index.html">Página de inicio</a>
+    
+</body>
+    
+</body>
+</html>
